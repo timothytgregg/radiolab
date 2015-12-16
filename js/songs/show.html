@@ -1,1 +1,8 @@
-<h2> A song! </h2>
+<div class = "song-show">
+  <h1>Song Show Page </h1>
+  <h2 class = "song-show-title">Artist: {{SongsShowViewModel.song.artist}}</h2>
+  <h2 class = "song-show-title">Title: {{SongsShowViewModel.song.title}}</h2>
+  <h2 class = "song-show-title">Genre: {{SongsShowViewModel.song.genre}}</h2>
+  <img class = "img" data-ng-src="{{SongsShowViewModel.song.album_art}}" src="#" alt="alt text" />
+  <audio controls class = "audio" data-ng-src="{{SongsShowViewModel.song.audio_url}}" src="#">  </audio>
+</div>
