@@ -5,4 +5,5 @@
   <h2 class = "song-show-title">Genre: {{SongsShowViewModel.song.genre}}</h2>
   <img class = "img" data-ng-src="{{SongsShowViewModel.song.album_art}}" src="#" alt="alt text" />
   <!-- <audio controls data-ng-src="{{SongsShowViewModel.song.audio_url}}" src="#"></audio> -->
+  <button data-ng-click="SongsShowViewModel.destroy()">Delete</button>
 </div>
