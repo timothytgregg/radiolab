@@ -1,6 +1,6 @@
 <h2>songs index</h2>
 
-<div ng-repeat="song in SongsIndexViewModel.songs ">
+<div ng-repeat="song in SongsIndexViewModel.songs | orderBy:'-created_at' ">
   <p>
   <a data-ui-sref = "songShow({id:song.id})">{{song.title}}</a>
   </p>
