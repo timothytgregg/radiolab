@@ -2,6 +2,6 @@
 
 <div ng-repeat="song in SongsIndexViewModel.songs ">
   <p>
-  {{song.title}}
+  <a data-ui-sref = "songShow({id:song.id})">{{song.title}}</a>
   </p>
 </div>
