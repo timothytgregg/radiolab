@@ -5,7 +5,7 @@
     return{
       templateUrl:'js/songs/_song_show.html',
       link:function(){
-        console.log('directive used');
+        console.log('show directive used');
       }
     };
   });

@@ -37,9 +37,9 @@
     })
     .state("songEdit", {
       url: "/songs/:id/edit",
-      template: "js/songs/edit.html",
+      templateUrl: "js/songs/edit.html",
       controller: "SongEditController",
       controllerAs: "SongEditViewModel"
-    })
+    });
   }
 })();
