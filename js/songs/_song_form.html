@@ -1,0 +1,12 @@
+<form>
+  <input placeholder="Artist" data-ng-model="song.artist" />
+  <input placeholder="Title" data-ng-model="song.title" />
+  <input placeholder="Genre" data-ng-model="song.genre" />
+  <input placeholder="Photo URL" data-ng-model="SongsNewViewModel.song.photoUrl" />
+  <div ng-show= "formType =='edit'">
+    <button type="button" data-ng-click="SongsEditViewModel.update()">Update</button>
+  </div>
+  <div ng-show= "formType =='new'">
+    <button type="button" data-ng-click="SongsNewViewModel.create()">Create</button>
+  </div>
+</form>
