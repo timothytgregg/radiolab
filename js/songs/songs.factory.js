@@ -9,8 +9,6 @@
   ]);
 
   function FactoryFunction($resource){
-    return $resource("http://localhost:3000/songs/:id"), {}, {
-      update:{method:"PUT"}
-    };
+    return $resource("http://localhost:3000/songs/:id");
   }
 })();
