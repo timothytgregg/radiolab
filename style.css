@@ -1,23 +1,46 @@
 *{ box-sizing:border-box; }
 
 body{
-  background-color: #C5D6D0;
+  background-color: #CCCCCC;
+  color: #222222;
 }
 .songIndex{
   margin:3em auto;
-  border: 2px solid #751226;
+  border: 1em solid #CC6633;
   border-radius: 20px;
   text-align: center;
   width: 80%;
-  background-color: #9F978C;
+  background-color: #FF9900;
+  padding: 1em;
 }
 
 .title {
   font-size: 50px;
   background-color: #C5D6D0;
-}
-.title a{
+  -webkit-box-shadow: 0px 3px 4px 1px rgba(61,18,27,1);
+    -moz-box-shadow: 0px 3px 4px 1px rgba(61,18,27,1);
+      box-shadow: 0px 3px 4px 1px rgba(61,18,27,1);
   font-style: none;
   text-decoration: none;
-  color: #9D5C56;
+  color: #222222;
+}
+.title:hover{
+  background-color: #CC6633;
+}
+
+a{
+  text-decoration: none;
+}
+
+.user-auth{
+  float:left;
+}
+
+button{
+  border: 3px solid #CC6633;
+  border-raius: 1em;
+  font-size: 15px;
+}
+.new-song{
+  background-color: #771100;
 }
