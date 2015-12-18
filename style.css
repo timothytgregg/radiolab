@@ -30,6 +30,8 @@ body{
 
 a{
   text-decoration: none;
+  color: inherit;
+  font-size: 20px;
 }
 
 .user-auth{
@@ -39,8 +41,44 @@ a{
 button{
   border: 3px solid #CC6633;
   border-raius: 1em;
-  font-size: 15px;
+  font-size: 20px;
 }
 .new-song{
-  background-color: #771100;
+  font-size: 20px;
+}
+
+/*css animation for a little rotating triangle, mostly made this because i couldn't get the actual songs to play (code still left in) but wanted some fun feature! ideally this rotating triangle would play the songs...but that's a larger goal. */
+@keyframes square-to-circle-tester {
+  0% {
+    border-radius: 0;
+    background: #acacac;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    border-radius: 0;
+    background: #a9d6d6;
+    transform: rotate(60deg);
+  }
+  75% {
+    border-radius: 0;
+    background: #80caca;
+    transform: rotate(120deg);
+  }
+  100% {
+    border-radius: 0;
+    background: #77a7a7;
+    transform: rotate(180deg);
+  }
+}
+
+.tri {
+
+  position: fixed;
+  top: 35%;
+  left: 70%;
+	border-top: 40px solid #FF9900;
+	border-bottom: 30px solid #FF9900;
+	border-left: 80px solid gray;
+  animation: square-to-circle-tester 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
 }
