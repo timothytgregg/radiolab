@@ -35,6 +35,12 @@
       controller: "SessionsController",
       controllerAs: "SessionsViewModel"
     })
+    .state("signup",{
+      url: "/signup",
+      templateUrl: "js/users/signup.html",
+      controller: "SessionsController",
+      controllerAs: "SessionsViewModel"
+    })
     .state("songsIndex", {
       url: "/songs",
       templateUrl: "js/songs/index.html",
@@ -58,6 +64,6 @@
       templateUrl: "js/songs/edit.html",
       controller: "SongsEditController",
       controllerAs: "SongsEditViewModel"
-    })
+    });
   }
 })();
