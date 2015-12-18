@@ -59,12 +59,7 @@ button{
   50% {
     border-radius: 0;
     background: #a9d6d6;
-    transform: rotate(60deg);
-  }
-  75% {
-    border-radius: 0;
-    background: #80caca;
-    transform: rotate(120deg);
+    transform: rotate(90deg);
   }
   100% {
     border-radius: 0;
@@ -76,10 +71,10 @@ button{
 .tri {
 
   position: fixed;
-  top: 35%;
-  left: 70%;
-	border-top: 40px solid #FF9900;
+  top: 28%;
+  left: 60%;
+	border-top: 30px solid #FF9900;
 	border-bottom: 30px solid #FF9900;
-	border-left: 80px solid gray;
+	border-left: 70px solid gray;
   animation: square-to-circle-tester 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
 }
