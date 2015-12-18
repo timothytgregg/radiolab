@@ -20,13 +20,16 @@
     <script src="js/songs/new.controller.js"></script>
     <script src="js/songs/edit.controller.js"></script>
     <script src="js/songs/songs.factory.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
   </head>
   <body>
-    <h1><a data-ui-sref="songsIndex">radiolab (Tun.r?)</a></h1>
-    <auth-nav></auth-nav>
-    <button><a data-ui-sref="songNew"> Create New Song</a></button>
-    <main data-ui-view></main>
+    <header class = "songIndex">
+      <h1 class = "title"><a data-ui-sref="songsIndex">Radiolab</a></h1>
+      <auth-nav></auth-nav>
+      <button><a data-ui-sref="songNew"> Create New Song</a></button>
+      <main data-ui-view></main>
+    </header>
   </body>
 </html>

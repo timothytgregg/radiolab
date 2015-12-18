@@ -1,0 +1,23 @@
+*{ box-sizing:border-box; }
+
+body{
+  background-color: #C5D6D0;
+}
+.songIndex{
+  margin:3em auto;
+  border: 2px solid #751226;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  background-color: #9F978C;
+}
+
+.title {
+  font-size: 50px;
+  background-color: #C5D6D0;
+}
+.title a{
+  font-style: none;
+  text-decoration: none;
+  color: #9D5C56;
+}
