@@ -3,7 +3,7 @@
 <h3>artist: {{SongShowViewModel.song.artist}}</h3>
 <h3>genre: {{SongShowViewModel.song.genre}}</h3>
 <img data-ng-src="{{SongShowViewModel.song.album_art}}" alt="alt text" />
-<!-- <audio controls data-ng-src="{{SongsShowViewModel.song.audio_url}}" ></audio> -->
+<div data-song-player data-ng-if="SongsIndexViewModel.playSong" data-song="SongsIndexViewModel.playSong">aoeu</div>
 <button type="button" data-ng-click="SongShowViewModel.destroy()">Delete!</button>
 <button>
   <a data-ui-sref="songEdit({id:SongShowViewModel.song.id})">Edit!</a>
